@@ -222,6 +222,5 @@ def handle_callback_query(call):
       "روابط ألعاب جمع العملات المعدنية لإستعمالها في خفض السعر لبعض المنتجات، قم بالدخول يوميا لها للحصول على أكبر عدد ممكن في اليوم 👇",
       reply_markup=keyboard_games)
 
-  # In[ ]:
-
-infinity_polling(timeout=10, long_polling_timeout=5)
+  # تشغيل البوت
+bot.infinity_polling(timeout=10, long_polling_timeout=5)
