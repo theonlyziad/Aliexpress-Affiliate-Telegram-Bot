@@ -4,7 +4,7 @@
 
 
 # In[1]:
-
+from keep_alive import keep_alive
 import telebot
 from telebot import types
 from aliexpress_api import AliexpressApi, models
