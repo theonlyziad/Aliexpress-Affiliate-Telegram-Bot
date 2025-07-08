@@ -21,27 +21,13 @@ aliexpress = AliexpressApi('502336', 'qW3MlLGKtt7jnZOg8KkHpfCbTaac2LOq',
 # In[3]:
 
 keyboardStart = types.InlineKeyboardMarkup(row_width=1)
-btn1 = types.InlineKeyboardButton("⭐️ألعاب لجمع العملات المعدنية⭐️",
-                                  callback_data="games")
-btn2 = types.InlineKeyboardButton("⭐️تخفيض العملات على منتجات السلة 🛒⭐️",
-                                  callback_data='click')
+btn1 = types.InlineKeyboardButton("⭐️ألعاب لجمع العملات المعدنية⭐️", callback_data="games")
+btn2 = types.InlineKeyboardButton("⭐️تخفيض العملات على منتجات السلة 🛒⭐️", callback_data='click')
+btn3 = types.InlineKeyboardButton("❤️ اشترك في القناة للمزيد من العروض ❤️", url="https://t.me/AliXPromotion")
+btn4 = types.InlineKeyboardButton("🎬 شاهد كيفية عمل البوت 🎬", url="https://t.me/AliXPromotion/8")
+btn5 = types.InlineKeyboardButton("💰  حمل تطبيق Aliexpress عبر الضغط هنا للحصول على مكافأة 5 دولار  💰", url="https://a.aliexpress.com/_mtV0j3q")
 
-btn4 = types.InlineKeyboardButton("🎬 شاهد كيفية عمل البوت 🎬",
-                                  url="https://t.me/AliXPromotion/8")
-btn5 = types.InlineKeyboardButton(
-    "💰  حمل تطبيق Aliexpress عبر الضغط هنا للحصول على مكافأة 5 دولار  💰",
-    url="https://a.aliexpress.com/_mtV0j3q")
 keyboardStart.add(btn1, btn2, btn3, btn4, btn5)
-
-keyboard = types.InlineKeyboardMarkup(row_width=1)
-btn1 = types.InlineKeyboardButton("⭐️ألعاب لجمع العملات المعدنية⭐️",
-                                  callback_data="games")
-btn2 = types.InlineKeyboardButton("⭐️تخفيض العملات على منتجات السلة 🛒⭐️",
-                                  callback_data='click')
-btn3 = types.InlineKeyboardButton("❤️ اشترك في القناة للمزيد من العروض ❤️",
-                                  url="https://t.me/AliXPromotion")
-
-keyboard.add(btn1, btn2, btn3)
 
 keyboard_games = types.InlineKeyboardMarkup(row_width=1)
 btn1 = types.InlineKeyboardButton(
