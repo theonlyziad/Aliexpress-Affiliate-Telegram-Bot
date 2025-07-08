@@ -4,7 +4,6 @@
 
 
 # In[1]:
-from keep_alive import keep_alive
 import telebot
 from telebot import types
 from aliexpress_api import AliexpressApi, models
@@ -14,7 +13,7 @@ from urllib.parse import urlparse, parse_qs
 
 # In[2]:
 
-bot = telebot.TeleBot('7893063626:AAHJA7a95JeM_RBCtsM9R7uq7Tx2r5FlSKE')
+bot = telebot.TeleBot('7893063626:AAFcoLITWPDWlg67yEHZbsA84G9pMX_bZNo')
   
 aliexpress = AliexpressApi('502336', 'qW3MlLGKtt7jnZOg8KkHpfCbTaac2LOq',
                            models.Language.EN, models.Currency.EUR, 'default')
@@ -224,8 +223,5 @@ def handle_callback_query(call):
       reply_markup=keyboard_games)
 
   # In[ ]:
-
-
-keep_alive()
 
 infinity_polling(timeout=10, long_polling_timeout=5)
